@@ -20,7 +20,7 @@ namespace Inmosat.ListenerDatFilesIridium.WorkerService.Repositories
         private readonly string _connectionString;
         public FileCdrIridiumRepository(IOptions<ConnectionStrings> options, ILogger<FileCdrIridiumRepository> logger)
         {
-            _connectionString = "Server=10.1.1.204;Database=Inmosat;User Id=sa;Password=Admin$;TrustServerCertificate=True;";
+            _connectionString = "Server=server;Database=Db;User Id=user;Password=pwd;TrustServerCertificate=True;";
             _logger = logger;
         }
 
@@ -70,3 +70,4 @@ namespace Inmosat.ListenerDatFilesIridium.WorkerService.Repositories
         }
     }
 }
+
